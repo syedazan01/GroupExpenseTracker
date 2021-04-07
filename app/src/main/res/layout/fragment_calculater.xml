@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:layout_alignRight="@+id/result"
+        android:text="+"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sum"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:layout_alignRight="@+id/sum"
+        android:text="-"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:layout_above="@+id/sub"
+        android:layout_alignRight="@+id/sub"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/div"
+        android:layout_above="@+id/num9"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:text="%"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mul"
+        android:layout_alignParentRight="true"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:text="/"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="="
+        android:background="@color/equal_color"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/clr"
+        android:text="C"
+        android:textSize="30dp"
+        android:layout_above="@+id/num8"
+        android:layout_toLeftOf="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:layout_margin="0.5dp"
+        />
+
+    <Button
+        android:id="@+id/num1"
+        android:text="1"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/num2"
+        android:layout_above="@+id/Sci"
+        android:layout_width="wrap_content"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num2"
+        android:text="2"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/num3"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_above="@+id/num0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+
+    <Button
+        android:id="@+id/num3"
+        android:text="3"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_above="@+id/dec"
+        android:layout_toLeftOf="@+id/sum"
+        android:layout_margin="0.5dp"
+        />
+
+    <Button
+        android:id="@+id/num4"
+        android:text="4"
+        android:textSize="30dp"
+        android:layout_above="@+id/num1"
+        android:layout_toLeftOf="@+id/num5"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num5"
+        android:text="5"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/num6"
+        android:layout_above="@+id/num2"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num6"
+        android:text="6"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/sub"
+        android:layout_above="@+id/num3"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num7"
+        android:text="7"
+        android:textSize="30dp"
+        android:layout_above="@+id/num4"
+        android:layout_toLeftOf="@+id/num8"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num8"
+        android:text="8"
+        android:textSize="30dp"
+        android:layout_above="@+id/num5"
+        android:layout_toLeftOf="@+id/num9"
+        android:layout_width="wrap_content"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num9"
+        android:text="9"
+        android:textSize="30dp"
+        android:layout_toLeftOf="@+id/mul"
+        android:layout_above="@+id/num6"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/num0"
+        android:text="0"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/dec"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/dec"
+        android:text="."
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"/>
+
+    <Button
+        android:id="@+id/Sci"
+        android:text="Sci"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/num0"
+        android:background="@color/function_color"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0.5dp"
+
+        />
+
+    <Button
+        android:id="@+id/AC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/num7"
+        android:background="@color/operation_color"
+        android:textColor="@color/white"
+        android:layout_margin="0.5dp"
+        android:layout_toLeftOf="@+id/clr"
+        android:text="AC"
+        android:textSize="30dp" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/clr"
+        android:inputType="numberDecimal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:textDirection="rtl"
+        android:gravity="bottom"
+        android:textSize="40dp"
+
+        android:hint="0"
+
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        tools:ignore="UnknownId">
+
+        <LinearLayout
+            android:id="@+id/science_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_rad"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/scrollview_btn_color"
+                android:text="RAD"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/root"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:background="@color/scrollview_btn_color"
+                android:text="ROOT"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:background="@color/scrollview_btn_color"
+                android:text="POWER"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/square"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:background="@color/scrollview_btn_color"
+                android:text="SQUARE"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/factorial"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:background="@color/scrollview_btn_color"
+                android:text="FACTORIAL"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/pie"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_margin="0.5dp"
+                android:background="@color/scrollview_btn_color"
+                android:text="PIE"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>

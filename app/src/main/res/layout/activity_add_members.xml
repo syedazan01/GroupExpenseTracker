@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:orientation="vertical"
+    tools:context=".AddMembers">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:text="Add Members"
+        android:textColor="#4d190a"
+        android:textSize="40dp"
+        android:typeface="serif"
+
+        />
+
+    <TextView
+        android:id="@+id/tpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/mname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="1 Member name"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/bt1_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_design"
+        android:text="Add"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:ems="10"
+        android:visibility="gone"
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Submit"
+        android:textSize="16sp"
+        android:background="@drawable/button_design"/>
+
+
+</LinearLayout>

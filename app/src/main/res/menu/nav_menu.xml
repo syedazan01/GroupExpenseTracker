@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+    <item android:id="@+id/home"
+    android:title="Home"
+    android:icon="@drawable/homeicon"></item>
+    <item android:id="@+id/members"
+        android:icon="@drawable/membersicon"
+        android:title="Members"></item>
+    <item android:id="@+id/Expense"
+        android:icon="@drawable/expenseicon"
+        android:title="Add Expense">
+    </item>
+    <item android:id="@+id/Modify"
+        android:icon="@drawable/editicon"
+        android:title="Modify Expense"></item>
+    <item android:id="@+id/calculater"
+        android:icon="@drawable/calceicon"
+        android:title="Calculater"></item>
+    <item android:id="@+id/details"
+        android:icon="@drawable/deatilsicon"
+        android:title="Trip Details"></item>
+    </group>
+
+    <group android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item android:id="@+id/aboutus"
+            android:title="About Us"
+            android:icon="@drawable/abouticon">
+        </item>
+    </group>
+
+
+
+
+</menu>

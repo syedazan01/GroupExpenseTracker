@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:orientation="vertical"
+    tools:context=".ModifyExpense">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="Expense Details"
+        android:textColor="#4d190a"
+        android:typeface="serif"
+        android:textSize="40dp" />
+<Spinner
+    android:padding="10dp"
+    android:id="@+id/name_spinner"
+    android:layout_marginTop="10dp"
+    android:layout_width="250dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"></Spinner>
+
+    <Spinner
+        android:padding="10dp"
+        android:id="@+id/type_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"></Spinner>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Amount"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Update"
+        android:textSize="30dp"
+        android:typeface="sans"/>
+
+</LinearLayout>

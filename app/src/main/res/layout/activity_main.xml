@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Select a Trip"
+        android:textColor="#4d190a"
+        android:textSize="50dp"
+        android:typeface="serif"
+
+        />
+
+    <EditText
+        android:id="@+id/tripname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Enter Trip Name"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:typeface="serif"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/addtrip_btn"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:ems="9"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="addtrip"
+        android:background="@drawable/button_design"
+        android:text="Add Trip"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="monospace" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:ems="9"
+        android:textSize="20dp"
+        android:typeface="monospace"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/button_design"/>
+</LinearLayout>

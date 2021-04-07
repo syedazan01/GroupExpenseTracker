@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:orientation="vertical"
+    tools:context=".CreateGroup">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Create a Group"
+        android:textSize="40dp"
+        android:typeface="serif"
+        android:textColor="#4d190a"
+        />
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="ID:1000"
+        android:enabled="false"
+        android:textSize="20dp"
+
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/et2_tpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:enabled="false"
+        android:textAlignment="center"
+
+        />
+
+    <EditText
+        android:id="@+id/et3_gsize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Group size:"
+        android:inputType="phone"
+        android:textSize="20dp"
+        android:maxLength="2"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/bt1_nxt"
+        android:ems="8"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="next"
+        android:background="@drawable/button_design"/>
+
+</LinearLayout>
